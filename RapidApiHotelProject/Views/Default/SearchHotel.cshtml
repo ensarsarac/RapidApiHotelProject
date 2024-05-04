@@ -205,7 +205,7 @@
                                         
                                     </tbody>
                                 </table>
-                                <a asp-action="HotelDetails" asp-controller="Default" asp-route-name="@item.property.name" asp-route-photo="@item.property.photoUrls[0].Replace("square60","square480")" asp-route-desc="@item.accessibilityLabel" asp-route-price="@item.property.priceBreakdown.excludedPrice.value.ToString("0")" class="primary-btn">More Details</a>
+                                <a href="/Default/HotelDetails/@item.property.name/@item.property.photoUrls[0].Replace("square60","square480")/@item.accessibilityLabel/@item.property.priceBreakdown.excludedPrice.value.ToString("0")" class="primary-btn">More Details</a>
                             </div>
                         </div>
                     </div>
